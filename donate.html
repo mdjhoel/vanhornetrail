@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Van Horne Trail</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo "><img src="trail.png"></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="about.html">About</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="https://www.facebook.com/SaintAndrewsVanHorneTrail" target="_blank">Social</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id='mycontainer'>
+      <h3>DONATE</h3>
+      <p>Saint Andrews Outdoor Recreation Trail Inc. (SORTI) is a volunteer organization dedicated to building, maintaining and improving the non motorized trail system in Saint Andrews by the Sea, New Brunswick. As a not for profit community focused group, SORTI relies on grants from government, private foundations and donations from individuals to fund maintainence and improvements to the trail system.</p>
+      <p>If you are interested in making a donation, please contact SORTI so we can organize a charitable receipt.</p>
+      <h4>Contact</h4>
+      <p>Chairperson of SORTI: David Johnson - <a href='#'>sortitrails@gmail.com</a></p>
+      <p>E-transfer email - <a href='#'>nb.sorti@gmail.com</a></p>
+    </div>
+
+    <footer class="page-footer black white-text">
+      <div id="mycontainer">
+        <div class="row">
+          <div class="col l6 s12">
+            <h4 class="orange-text text-lighten-1">Van Horne Trail</h4>
+            <h6 class="white-text">Saint Andrews Recreation Trail Inc.</h6>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h4 class="orange-text text-lighten-1">Our partners</h4>
+            <ul>
+              <li><a class="white-text" href="https://explorestandrews.ca/" target="_blank">Explore Saint Andrews</a></li>
+              <li><a class="white-text" href="https://standrewskiwanis.ca/" target="_blank">St Andrews Kiwanis</a></li>
+              <li><a class="white-text" href="https://www.townofsaintandrews.ca/" target="_blank">Town of Saint Andrews</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <p style='padding:8px'>© 2023 Vanhornetrail.info</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.materialboxed');
+      var instances = M.Materialbox.init(elems);
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.slider');
+      var instances = M.Slider.init(elems);
+    });
+  </script>
+</html>

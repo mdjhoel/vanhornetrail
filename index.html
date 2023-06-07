@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Van Horne Trail</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo "><img src="trail.png"></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="about.html">About</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="https://www.facebook.com/SaintAndrewsVanHorneTrail" target="_blank">Social</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="floater">
+      <h5 class="orange-text">Welcome to our trail</h5>
+      <p>Saint Andrews Recreation Trail Inc. (SORTI) is a non profit organization that helps build and maintain the St Andrews trail system. Use this site to plan your use of the Van Horne trail and to get involved in its improvement.</p>
+    </div>
+
+    <div class="col s12">
+      <div class="slider">
+        <ul class="slides">
+          <li>
+            <img src="nhs.jpg">
+          </li>
+          <li>
+            <img src="gates.jpg">
+          </li>
+          <li>
+            <img src="sa_night.jpg">
+          </li>
+          <li>
+            <img src="deer.jpg">
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col s12 m3">
+        <div class="card">
+          <a href="about.html">
+          <div class="card-action black">
+            <span id='labels'>ABOUT</span>
+          </div>
+          <div class="card-image">
+            <img src="vhlogo.png" style='padding:5px'>
+          </div>
+          </a>
+        </div>
+      </div>
+      <div class="col s12 m3">
+        <div class="card">
+          <a href="explore.html">
+          <div class="card-action black">
+            <span id='labels'>EXPLORE</span>
+          </div>
+          <div class="card-image">
+            <img src="explore.png">
+          </div>
+          </a>
+        </div>
+      </div>
+      <div class="col s12 m3">
+        <div class="card">
+          <a href="donate.html">
+          <div class="card-action black">
+            <span id='labels'>DONATE</span>
+          </div>
+          <div class="card-image">
+            <img src="seat.jpg">
+          </div>
+          </a>
+        </div>
+      </div>
+      <div class="col s12 m3">
+        <div class="card">
+          <a href="https://www.facebook.com/SaintAndrewsVanHorneTrail" target="_blank">
+          <div class="card-action black">
+            <span id='labels'>SOCIAL</span>
+          </div>
+          <div class="card-image">
+            <img src="kids.jpg">
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer black white-text">
+      <div class="container">
+        <div class="row">
+          <div class="col l6 s12">
+            <h4 class="orange-text text-lighten-1">Van Horne Trail</h4>
+            <h6 class="white-text">Saint Andrews Recreation Trail Inc.</h6>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h4 class="orange-text text-lighten-1">Our partners</h4>
+            <ul>
+              <li><a class="white-text" href="https://explorestandrews.ca/" target="_blank">Explore Saint Andrews</a></li>
+              <li><a class="white-text" href="https://standrewskiwanis.ca/" target="_blank">St Andrews Kiwanis</a></li>
+              <li><a class="white-text" href="https://www.townofsaintandrews.ca/" target="_blank">Town of Saint Andrews</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <p style='padding:8px'>© 2023 Vanhornetrail.info</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.materialboxed');
+      var instances = M.Materialbox.init(elems);
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.slider');
+      var instances = M.Slider.init(elems);
+    });
+  </script>
+</html>

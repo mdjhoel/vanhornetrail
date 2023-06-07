@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Van Horne Trail</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <link rel='stylesheet' href='css/leaflet.css'/>
+    <script src='js/leaflet.js'></script>
+    <script src="sa_detour.geojson"></script>
+    <script src="data.js"></script>
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo "><img src="trail.png"></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="about.html">About</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="https://www.facebook.com/SaintAndrewsVanHorneTrail" target="_blank">Social</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id='mycontainer'>
+      <h3>EXPLORE</h3>
+      <div class="col s12">
+          <div id='map'></div>
+      </div>
+      <div class="col s12 m6">
+          <span>
+            <h5 style="padding-top:30px">Map legend</h5>
+          </span>
+          <span>
+              <svg height="25" width="25">
+                  <circle cx="15" cy="15" r="8" stroke="#33cc33" stroke-width="3" fill="#33cc33" fill-opacity="0.5"/>
+              </svg>
+          </span>
+          <span style="padding-bottom: 20px;"><b>
+              Click to view site information</b>
+          </span>
+      </div>
+      <div class="col s12 m6">
+          <span>
+              <svg height="25" width="30">
+                <polyline points="5,10 15,10 15,20 25,20"
+                style="fill:white;stroke:#0d47a1;stroke-width:4" />
+              </svg>
+          </span>
+          <span style="margin-bottom: 5px;">
+              <b>Paved section</b>
+          </span>
+      </div>
+      <div class="col s12 m6">
+          <span>
+              <svg height="25" width="30">
+                <polyline points="5,10 15,10 15,20 25,20"
+                style="fill:white;stroke:#996633;stroke-width:4" />
+              </svg>
+          </span>
+          <span style="margin-bottom: 5px; color:#996633">
+              <b>Connectors</b>
+          </span>
+      </div>
+      <div class="col s12 m6">
+          <span>
+              <svg height="25" width="30">
+                <polyline points="5,10 15,10 15,20 25,20"
+                style="fill:white;stroke:#009900;stroke-width:4" />
+              </svg>
+          </span>
+          <span style="margin-bottom: 5px;">
+              <b>Historic Water street</b>
+          </span>
+      </div>
+      <div class="col s12 m6">
+          <span>
+              <svg height="25" width="30">
+                <polyline points="5,10 15,10 15,20 25,20"
+                style="fill:white;stroke:#f2b90d;stroke-width:4; stroke-dasharray:5,5" />
+              </svg>
+          </span>
+          <span style="margin-bottom: 5px;">
+              <b>Other routes and trails</b>
+          </span>
+          <span>
+            <p style="padding-top:15px">Join us on <a href="https://www.facebook.com/SaintAndrewsVanHorneTrail" target="_blank">Facebook</a> for recent photos and commentary. Upload your own!</p>
+          </span>
+      </div>
+  </div>
+</div>
+</div>
+    </div>
+
+    <footer class="page-footer black white-text">
+      <div id="mycontainer">
+        <div class="row">
+          <div class="col l6 s12">
+            <h4 class="orange-text text-lighten-1">Van Horne Trail</h4>
+            <h6 class="white-text">Saint Andrews Recreation Trail Inc.</h6>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h4 class="orange-text text-lighten-1">Our partners</h4>
+            <ul>
+              <li><a class="white-text" href="https://explorestandrews.ca/" target="_blank">Explore Saint Andrews</a></li>
+              <li><a class="white-text" href="https://standrewskiwanis.ca/" target="_blank">St Andrews Kiwanis</a></li>
+              <li><a class="white-text" href="https://www.townofsaintandrews.ca/" target="_blank">Town of Saint Andrews</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <p style='padding:8px'>© 2023 Vanhornetrail.info</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+  <script>
+    map();
+
+    function map() {
+
+        map = new L.Map('map');
+        var cartocdn = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png';
+
+        // https://carto.com/help/building-maps/basemap-list/
+        carto = new L.TileLayer(cartocdn);
+        map.setView([45.085,-67.06],14); // centered on SA lat, long
+        map.addLayer(carto);
+
+        g = L.geoJSON(geojsonfeatures, {style: colorIt, onEachFeature: bindIt} ).addTo(map);
+
+        function colorIt(feature) {
+            return {color: feature.properties.stroke, weight: feature.properties.weight, dashArray: feature.properties.dashed};
+        }
+
+        function bindIt(feature, layer) {
+          var popcontent = "<h5>" + feature.properties.name + "</h5><p>" + feature.properties.desc + "</p><br><a href='" + feature.properties.link + "' target='_blank'><img src='photos/" + feature.properties.pic + "'></a>"
+          layer.bindPopup(popcontent,{minWidth:320});
+        }
+
+        // Loop to write out circles from data.js
+        //conf_x_factor = 5;
+        for (i=0;i<data.length;i++) {
+            rating = data[i].rating;
+            radius = 50; ratingcolor = "#33cc33";
+            if (rating == 1) {
+                radius = 50; ratingcolor = "#ff00ff";
+            }
+            if (rating == 2) {
+                radius = 90; ratingcolor = "#ff0000";
+            }
+            L.circle(data[i]['coordinates'],{color:'green',fillColor:'#33cc33',fillOpacity:0.5,radius: radius}).addTo(map).bindPopup("<h5>" + data[i]['name'] + "</h5><p>" + data[i]['desc'] + "</p><br><a href='photos/" + data[i]['photo'] + ".jpg' target='_blank'><img src='photos/" + data[i]['photo'] + "_th.jpg'></a>");
+        }
+    }
+  </script>
+</html>

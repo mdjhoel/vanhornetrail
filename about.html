@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Van Horne Trail</title>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Custom css -->
+    <link rel="stylesheet" href="styles.css">
+
+  </head>
+  <body>
+
+    <nav>
+      <div class="nav-wrapper">
+        <a href="index.html" class="brand-logo "><img src="trail.png"></a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+          <li><a href="about.html">About</a></li>
+          <li><a href="explore.html">Explore</a></li>
+          <li><a href="donate.html">Donate</a></li>
+          <li><a href="https://www.facebook.com/SaintAndrewsVanHorneTrail" target="_blank">Social</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id='mycontainer'>
+      <h3>ABOUT</h3>
+      <p>Saint Andrews Outdoor Recreation Trail Inc. (SORTI) is a volunteer organization dedicated to building, maintaining and improving the non motorized trail system in Saint Andrews, New Brunswick.</p>
+      <p>Chairperson of SORTI: David Johnson - <a href='#'>sortitrails@gmail.com</a></p>
+      <h4>Accomplishments</h4>
+      <div class="row">
+        <div class="col s12 m3">
+          <div class="card">
+            <a href="photos/phases.png" target="_blank">
+            <div class="card-action black">
+              <span id='labels'>Original plan 2013</span>
+            </div>
+            <div class="card-image">
+              <img src="photos/phases.png">
+            </div>
+            </a>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="card">
+            <a href="photos/trailopen.jpg" target="_blank">
+            <div class="card-action black">
+              <span id='labels'>Phase 1 complete - July 1, 2014</span>
+            </div>
+            <div class="card-image">
+              <img src="photos/trailopen.jpg">
+            </div>
+            </a>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="card">
+            <a href="photos/phase2.jpg" target="_blank">
+            <div class="card-action black">
+              <span id='labels'>Phase 2 - well used all year</span>
+            </div>
+            <div class="card-image">
+              <img src="photos/phase2.jpg">
+            </div>
+            </a>
+          </div>
+        </div>
+        <div class="col s12 m3">
+          <div class="card">
+            <a href="photos/phase3.jpg" target="_blank">
+            <div class="card-action black">
+              <span id='labels'>Phase 3 - all ages multi use</span>
+            </div>
+            <div class="card-image">
+              <img src="photos/phase3.jpg">
+            </div>
+            </a>
+          </div>
+        </div>
+    </div>
+    <div class="row">
+      <div class="col s12 m3">
+        <div class="card">
+          <a href="photos/ducks.jpg" target="_blank">
+          <div class="card-action black">
+            <span id='labels'>Accessible bird watching area</span>
+          </div>
+          <div class="card-image">
+            <img src="photos/ducks.jpg">
+          </div>
+          </a>
+        </div>
+      </div>
+      <div class="col s12 m3">
+        <div class="card">
+          <a href="photos/roselane.jpg" target="_blank">
+          <div class="card-action black">
+            <span id='labels'>Rose lane extension to Barr road</span>
+          </div>
+          <div class="card-image">
+            <img src="photos/roselane.jpg">
+          </div>
+          </a>
+        </div>
+      </div>
+      <div class="col s12 m3">
+        <div class="card">
+          <a href="photos/brandy2.jpg" target="_blank">
+          <div class="card-action black">
+            <span id='labels'>Algonquin golf course</span>
+          </div>
+          <div class="card-image">
+            <img src="photos/brandy2.jpg">
+          </div>
+          </a>
+        </div>
+      </div>
+      <div class="col s12 m3">
+        <div class="card">
+          <a href="photos/allphases.png" target="_blank">
+          <div class="card-action black">
+            <span id='labels'>10km loop - 2023</span>
+          </div>
+          <div class="card-image">
+            <img src="photos/allphases.png">
+          </div>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <footer class="page-footer black white-text">
+      <div id="mycontainer">
+        <div class="row">
+          <div class="col l6 s12">
+            <h4 class="orange-text text-lighten-1">Van Horne Trail</h4>
+            <h6 class="white-text">Saint Andrews Recreation Trail Inc.</h6>
+          </div>
+          <div class="col l4 offset-l2 s12">
+            <h4 class="orange-text text-lighten-1">Our partners</h4>
+            <ul>
+              <li><a class="white-text" href="https://explorestandrews.ca/" target="_blank">Explore Saint Andrews</a></li>
+              <li><a class="white-text" href="https://standrewskiwanis.ca/" target="_blank">St Andrews Kiwanis</a></li>
+              <li><a class="white-text" href="https://www.townofsaintandrews.ca/" target="_blank">Town of Saint Andrews</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+          <p style='padding:8px'>© 2023 Vanhornetrail.info</p>
+        </div>
+      </div>
+    </footer>
+
+  </body>
+
+  <script>
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.materialboxed');
+      var instances = M.Materialbox.init(elems);
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.slider');
+      var instances = M.Slider.init(elems);
+    });
+  </script>
+</html>

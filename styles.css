@@ -1,0 +1,56 @@
+nav {
+  background-color: black;
+  padding: 5px;
+  padding-top: 10px;
+}
+
+.slider {
+  height: 400px !important;
+  z-index: -1;
+}
+
+.slider .indicators {
+  bottom: 45px;
+  z-index: 100;
+}
+
+.slider .indicators .indicator-item.active {
+  background-color: orange;
+}
+
+.row {
+    margin: 0 !important;
+}
+
+.card:hover {
+  cursor: pointer;
+  transition: all .3s ease;
+  border: 4px solid black;
+}
+
+#mycontainer {
+  padding: 30px;
+}
+
+#floater {
+  position:absolute;
+  width: 300px;
+  padding: 20px;
+  left:20px;
+  top:100px;
+  background-color: white;
+  opacity: .7;
+}
+
+#labels {
+  color: orange;
+  font-size: 1.2em;
+}
+
+.ppcont{
+  width:320px;
+}
+
+#map {
+  height: 800px;
+}
