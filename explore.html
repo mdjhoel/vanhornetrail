@@ -35,68 +35,68 @@
 
     <div id='mycontainer'>
       <h3>EXPLORE</h3>
+
+      <div class="row">
+        <div class="col s12 m6">
+            <span>
+                <svg height="25" width="25">
+                    <circle cx="15" cy="15" r="8" stroke="#ff9800" stroke-width="3" fill="#ff9800" fill-opacity="0.5"/>
+                </svg>
+            </span>
+            <span style="padding-bottom: 20px;"><b>
+                Click to view site information</b>
+            </span>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col s12 m2">
+            <span>
+                <svg height="25" width="30">
+                  <polyline points="5,10 15,10 15,20 25,20"
+                  style="fill:white;stroke:#0d47a1;stroke-width:4" />
+                </svg>
+            </span>
+            <span style="margin-bottom: 5px;">
+                <b>Paved section</b>
+            </span>
+        </div>
+        <div class="col s12 m2">
+            <span>
+                <svg height="25" width="30">
+                  <polyline points="5,10 15,10 15,20 25,20"
+                  style="fill:white;stroke:#996633;stroke-width:4" />
+                </svg>
+            </span>
+            <span style="margin-bottom: 5px; color:#996633">
+                <b>Connectors</b>
+            </span>
+        </div>
+        <div class="col s12 m2">
+            <span>
+                <svg height="25" width="30">
+                  <polyline points="5,10 15,10 15,20 25,20"
+                  style="fill:white;stroke:#009900;stroke-width:4" />
+                </svg>
+            </span>
+            <span style="margin-bottom: 5px;">
+                <b>Historic Water street</b>
+            </span>
+        </div>
+        <div class="col s12 m2">
+            <span>
+                <svg height="25" width="30">
+                  <polyline points="5,10 15,10 15,20 25,20"
+                  style="fill:white;stroke:#4caf50;stroke-width:4; stroke-dasharray:5,5" />
+                </svg>
+            </span>
+            <span style="margin-bottom: 5px;">
+                <b>Other routes and trails</b>
+            </span>
+        </div>
+      </div>
+      <br>
       <div class="col s12">
           <div id='map'></div>
-      </div>
-      <div class="col s12 m6">
-          <span>
-            <h5 style="padding-top:30px">Map legend</h5>
-          </span>
-          <span>
-              <svg height="25" width="25">
-                  <circle cx="15" cy="15" r="8" stroke="#33cc33" stroke-width="3" fill="#33cc33" fill-opacity="0.5"/>
-              </svg>
-          </span>
-          <span style="padding-bottom: 20px;"><b>
-              Click to view site information</b>
-          </span>
-      </div>
-      <div class="col s12 m6">
-          <span>
-              <svg height="25" width="30">
-                <polyline points="5,10 15,10 15,20 25,20"
-                style="fill:white;stroke:#0d47a1;stroke-width:4" />
-              </svg>
-          </span>
-          <span style="margin-bottom: 5px;">
-              <b>Paved section</b>
-          </span>
-      </div>
-      <div class="col s12 m6">
-          <span>
-              <svg height="25" width="30">
-                <polyline points="5,10 15,10 15,20 25,20"
-                style="fill:white;stroke:#996633;stroke-width:4" />
-              </svg>
-          </span>
-          <span style="margin-bottom: 5px; color:#996633">
-              <b>Connectors</b>
-          </span>
-      </div>
-      <div class="col s12 m6">
-          <span>
-              <svg height="25" width="30">
-                <polyline points="5,10 15,10 15,20 25,20"
-                style="fill:white;stroke:#009900;stroke-width:4" />
-              </svg>
-          </span>
-          <span style="margin-bottom: 5px;">
-              <b>Historic Water street</b>
-          </span>
-      </div>
-      <div class="col s12 m6">
-          <span>
-              <svg height="25" width="30">
-                <polyline points="5,10 15,10 15,20 25,20"
-                style="fill:white;stroke:#f2b90d;stroke-width:4; stroke-dasharray:5,5" />
-              </svg>
-          </span>
-          <span style="margin-bottom: 5px;">
-              <b>Other routes and trails</b>
-          </span>
-          <span>
-            <p style="padding-top:15px">Join us on <a href="https://www.facebook.com/SaintAndrewsVanHorneTrail" target="_blank">Facebook</a> for recent photos and commentary. Upload your own!</p>
-          </span>
       </div>
   </div>
 </div>
@@ -166,7 +166,7 @@
             if (rating == 2) {
                 radius = 90; ratingcolor = "#ff0000";
             }
-            L.circle(data[i]['coordinates'],{color:'green',fillColor:'#33cc33',fillOpacity:0.5,radius: radius}).addTo(map).bindPopup("<h5>" + data[i]['name'] + "</h5><p>" + data[i]['desc'] + "</p><br><a href='photos/" + data[i]['photo'] + ".jpg' target='_blank'><img src='photos/" + data[i]['photo'] + "_th.jpg'></a>");
+            L.circle(data[i]['coordinates'],{color:'#ff9800',fillColor:'#ff9800',fillOpacity:0.5,radius: radius}).addTo(map).bindPopup("<h5>" + data[i]['name'] + "</h5><p>" + data[i]['desc'] + "</p><br><a href='photos/" + data[i]['photo'] + ".jpg' target='_blank'><img src='photos/" + data[i]['photo'] + "_th.jpg'></a>");
         }
     }
   </script>
