@@ -137,9 +137,14 @@
     function map() {
 
         map = new L.Map('map');
-        var cartocdn = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png';
+        //var cartocdn = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png';
+        // switched to OSM basemap to remove Van Horne Village
+        // var cartocdn = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
+        // switched to satellite view
+        var cartocdn = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
 
         // https://carto.com/help/building-maps/basemap-list/
+        // https://leaflet-extras.github.io/leaflet-providers/preview/
         carto = new L.TileLayer(cartocdn);
         map.setView([45.085,-67.06],14); // centered on SA lat, long
         map.addLayer(carto);
