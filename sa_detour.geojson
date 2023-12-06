@@ -4,6 +4,100 @@ geojsonfeatures = {
     {
       "type": "Feature",
       "properties": {
+        "name": "Beach walk",
+        "desc": "Advanced: Walk on the bottom of the ocean from Bar Road to the Trestle. The footing on the beach can be tricky.",
+        "tessellate": 1,
+        "shape": "Line",
+        "category": "beachwalk",
+        "stroke": "#4caf50",
+        "dashed": "5,5",
+        "weight": 2,
+        "stroke-opacity": 1,
+        "fill": null,
+        "fill-opacity": null,
+        "pic": "beachwalk_th.jpg",
+        "link": "photos/beachwalk.png"},
+      "geometry": {
+        "coordinates": [
+          [
+            -67.05473576188918,
+            45.09832977024928
+          ],
+          [
+            -67.05493309140508,
+            45.097958320054374
+          ],
+          [
+            -67.05478359934753,
+            45.09729983422437
+          ],
+          [
+            -67.05446667618533,
+            45.096362745143665
+          ],
+          [
+            -67.0537909721312,
+            45.09509682091175
+          ],
+          [
+            -67.05339631309941,
+            45.0950039533316
+          ],
+          [
+            -67.05321094294754,
+            45.09480133263341
+          ],
+          [
+            -67.05306743057241,
+            45.09451850670601
+          ],
+          [
+            -67.05298371502045,
+            45.093990842649816
+          ],
+          [
+            -67.05277442613902,
+            45.09360247878956
+          ],
+          [
+            -67.0523737876744,
+            45.09312968457806
+          ],
+          [
+            -67.05112403407198,
+            45.09200256082892
+          ],
+          [
+            -67.04963509317767,
+            45.091027390872824
+          ],
+          [
+            -67.04847241248373,
+            45.090326915640105
+          ],
+          [
+            -67.04733029316284,
+            45.089389712134675
+          ],
+          [
+            -67.04636714461536,
+            45.0885562290394
+          ],
+          [
+            -67.04593062780755,
+            45.08773298504468
+          ],
+          [
+            -67.04576917638522,
+            45.087222145674986
+          ]
+        ],
+        "type": "LineString"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Bar road connector",
         "desc": "The paved Van Horne trail ends at Bar road. A bike lane connects Mowat drive (highway 127 to St. John) to Ministers Island.",
         "tessellate": 1,
