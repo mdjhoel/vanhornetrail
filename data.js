@@ -7,7 +7,7 @@ data = [{
 }, {
 	"name": 'Towards Ministers Island',
 	"desc": "Turn right off the paved trail and head down the hill to the bar. At low tide you can cross.",
-	"coordinates": [45.09433377593718, -67.0587819814682],
+	"coordinates": [45.09472860206171, -67.05843052941205],
 	"photo": "bareast",
 	"rating": "0"
 }, {
