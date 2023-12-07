@@ -10,7 +10,22 @@ data = [{
 	"coordinates": [45.09472860206171, -67.05843052941205],
 	"photo": "bareast",
 	"rating": "0"
-}, {
+},
+{
+	"name": 'Beach walk',
+	"desc": "Walk on the bottom of the ocean at low tide from Bar road to the Trestle.",
+	"coordinates": [45.098132218698794, -67.0549482193224],
+	"photo": "beachwalk",
+	"rating": "0"
+},
+{
+	"name": 'Lily Pond',
+	"desc": "While the full path is not complete to the existing paved trail. The lily pond can be enjoyed now.",
+	"coordinates": [45.09097840770414, -67.05792519400974],
+	"photo": "lilypond",
+	"rating": "0"
+},
+{
 	"name": 'Cornelia and Mowat',
 	"desc": "This is the busiest traffic intersection of the trail. Look both ways!",
 	"coordinates": [45.0913268458189, -67.06638872623444],
