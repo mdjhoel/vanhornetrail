@@ -15,8 +15,8 @@ geojsonfeatures = {
         "stroke-opacity": 1,
         "fill": null,
         "fill-opacity": null,
-        "pic": "lilypond_th.jpeg",
-        "link": "photos/lilypond.jpeg"},
+        "pic": "lilypond_th.jpg",
+        "link": "photos/lilypond.jpg"},
       "geometry": {
               "coordinates": [
           [
