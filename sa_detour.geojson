@@ -4,14 +4,84 @@ geojsonfeatures = {
     {
       "type": "Feature",
       "properties": {
+        "name": "Lily Pond",
+        "desc": "Future development on the path will lead from Bar road to a beautiful lily pond and connect with trail.",
+        "tessellate": 1,
+        "shape": "Line",
+        "category": "lilypond",
+        "stroke": "white",
+        "dashed": "4,4",
+        "weight": 3,
+        "stroke-opacity": 1,
+        "fill": null,
+        "fill-opacity": null,
+        "pic": "lilypond_th.jpeg",
+        "link": "photos/lilypond.jpeg"},
+      "geometry": {
+              "coordinates": [
+          [
+            -67.06019309106071,
+            45.09281713647496
+          ],
+          [
+            -67.05990478250735,
+            45.09262813992288
+          ],
+          [
+            -67.05968855109263,
+            45.09239552792312
+          ],
+          [
+            -67.0593281654006,
+            45.09203933896245
+          ],
+          [
+            -67.05902956011367,
+            45.09174130159431
+          ],
+          [
+            -67.05887510910279,
+            45.09160318618896
+          ],
+          [
+            -67.05871036135838,
+            45.09154503223431
+          ],
+          [
+            -67.05847353647529,
+            45.09146507044963
+          ],
+          [
+            -67.05834997566697,
+            45.09139964708814
+          ],
+          [
+            -67.05799988670913,
+            45.091094337077294
+          ],
+          [
+            -67.0577939520286,
+            45.09096348943001
+          ],
+          [
+            -67.05648626680482,
+            45.09217018414489
+          ]
+        ],
+        "type": "LineString"
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "name": "Beach walk",
         "desc": "Advanced: Walk on the bottom of the ocean from Bar Road to the Trestle. The footing on the beach can be tricky.",
         "tessellate": 1,
         "shape": "Line",
         "category": "beachwalk",
         "stroke": "#4caf50",
-        "dashed": "5,5",
-        "weight": 2,
+        "dashed": "4,4",
+        "weight": 3,
         "stroke-opacity": 1,
         "fill": null,
         "fill-opacity": null,
@@ -104,7 +174,7 @@ geojsonfeatures = {
         "shape": "Line",
         "category": "barroad",
         "stroke": "#996633",
-        "weight": 2,
+        "weight": 3,
         "stroke-opacity": 1,
         "fill": null,
         "fill-opacity": null,
@@ -330,7 +400,7 @@ geojsonfeatures = {
           "shape": "Line",
           "category": "vanhorne",
           "stroke": "#996633",
-          "weight": 2,
+          "weight": 3,
           "stroke-opacity": 1,
           "fill": null,
           "fill-opacity": null,
@@ -442,7 +512,7 @@ geojsonfeatures = {
         "shape": "Line",
         "category": "vanhorne",
         "stroke": "#009900",
-        "weight": 2,
+        "weight": 3,
         "stroke-opacity": 1,
         "fill": null,
         "fill-opacity": null,
@@ -512,7 +582,7 @@ geojsonfeatures = {
         "shape": "Line",
         "category": "vanhorne",
         "stroke": "#996633",
-        "weight": 2,
+        "weight": 3,
         "stroke-opacity": 1,
         "fill": null,
         "fill-opacity": null,
@@ -592,7 +662,7 @@ geojsonfeatures = {
         "shape": "Line",
         "category": "vanhorne",
         "stroke": "#009900",
-        "weight": 2,
+        "weight": 3,
         "stroke-opacity": 1,
         "fill": null,
         "fill-opacity": null,
@@ -620,7 +690,7 @@ geojsonfeatures = {
               "category": "vanhorne",
               "stroke": "#4caf50",
               "dashed":"5,5",
-              "weight": 2,
+              "weight": 3,
               "stroke-opacity": 1,
               "fill": null,
               "fill-opacity": null,
@@ -638,7 +708,7 @@ geojsonfeatures = {
               "category": "passamaquoddy",
               "stroke": "#4caf50",
               "dashed":"5,5",
-              "weight": 2,
+              "weight": 3,
               "stroke-opacity": 1,
               "fill": null,
               "fill-opacity": null,
@@ -765,7 +835,7 @@ geojsonfeatures = {
             "category": "trestle",
             "stroke": "#4caf50",
             "dashed":"5,5",
-            "weight": 2,
+            "weight": 3,
             "stroke-opacity": 1,
             "fill": null,
             "fill-opacity": null,
