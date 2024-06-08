@@ -25,6 +25,20 @@ data = [{
 	"photo": "lilypond",
 	"rating": "0"
 },
+{ 
+	"name": 'Pendlebury lighthouse',
+	"desc": "Access the beach during low tide.",
+	"coordinates": [45.06834200310476, -67.04725057623676],
+	"photo": "lighthouse",
+	"rating": "0"
+}, 
+{ 
+	"name": 'Wellness park',
+	"desc": "Stop for a workout on your way past.",
+	"coordinates": [45.07465931975202, -67.04022534305602],
+	"photo": "gym",
+	"rating": "0"
+},
 {
 	"name": 'Cornelia and Mowat',
 	"desc": "This is the busiest traffic intersection of the trail. Look both ways!",
