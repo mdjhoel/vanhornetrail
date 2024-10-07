@@ -11,11 +11,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 
-    <link rel='stylesheet' href='css/leaflet.css'/>
-    <script src='js/leaflet.js'></script>
-    <script src="sa_detour.geojson"></script>
-    <script src="tools.js"></script>
-
     <!-- Custom css -->
     <link rel="stylesheet" href="styles.css">
 
@@ -99,48 +94,4 @@
 
   </body>
 
-  <script>
-    map();
-
-    function map() {
-
-        map = new L.Map('map');
-        //var cartocdn = 'https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}.png';
-        // switched to OSM basemap to remove Van Horne Village
-        // var cartocdn = 'https://tile.openstreetmap.org/{z}/{x}/{y}.png';
-        // switched to satellite view
-        var cartocdn = 'https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}'
-
-        // https://carto.com/help/building-maps/basemap-list/
-        // https://leaflet-extras.github.io/leaflet-providers/preview/
-        carto = new L.TileLayer(cartocdn);
-        map.setView([45.085,-67.06],14); // centered on SA lat, long
-        map.addLayer(carto);
-
-        g = L.geoJSON(geojsonfeatures, {style: colorIt, onEachFeature: bindIt} ).addTo(map);
-
-        function colorIt(feature) {
-            return {color: feature.properties.stroke, weight: feature.properties.weight, dashArray: feature.properties.dashed};
-        }
-
-        function bindIt(feature, layer) {
-          var popcontent = "<h5>" + feature.properties.name + "</h5><p>" + feature.properties.desc + "</p><br><a href='" + feature.properties.link + "' target='_blank'><img src='photos/" + feature.properties.pic + "'></a>"
-          layer.bindPopup(popcontent,{minWidth:320});
-        }
-
-        // Loop to write out circles from data.js
-        //conf_x_factor = 5;
-        for (i=0;i<data.length;i++) {
-            rating = data[i].rating;
-            radius = 50; ratingcolor = "#33cc33";
-            if (rating == 1) {
-                radius = 50; ratingcolor = "#ff00ff";
-            }
-            if (rating == 2) {
-                radius = 90; ratingcolor = "#ff0000";
-            }
-            L.circle(data[i]['coordinates'],{color:'#ff9800',fillColor:'#ff9800',fillOpacity:0.5,radius: radius}).addTo(map).bindPopup("<h5>" + data[i]['name'] + "</h5><p>" + data[i]['desc'] + "</p><br><a href='photos/" + data[i]['photo'] + ".jpg' target='_blank'><img src='photos/" + data[i]['photo'] + "_th.jpg'></a>");
-        }
-    }
-  </script>
 </html>
