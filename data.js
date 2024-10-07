@@ -4,14 +4,19 @@ data = [{
 	"coordinates": [45.089141609616085, -67.06505298614502],
 	"photo": "xwalk",
 	"rating": "0"
-}, {
-	"name": 'Towards Ministers Island',
-	"desc": "Turn right off the paved trail and head down the hill to the bar. At low tide you can cross.",
-	"coordinates": [45.09472860206171, -67.05843052941205],
-	"photo": "bareast",
+},{ 
+	"name": 'Pendlebury lighthouse',
+	"desc": "Access the beach during low tide.",
+	"coordinates": [45.06834200310476, -67.04725057623676],
+	"photo": "lighthouse",
 	"rating": "0"
-},
-{
+}, { 
+	"name": 'Wellness park',
+	"desc": "Stop for a workout on your way past.",
+	"coordinates": [45.07465931975202, -67.04022534305602],
+	"photo": "gym",
+	"rating": "0"
+}, {
 	"name": 'Beach walk',
 	"desc": "Walk on the bottom of the ocean at low tide from Bar road to the Trestle.",
 	"coordinates": [45.098132218698794, -67.0549482193224],
@@ -24,38 +29,11 @@ data = [{
 	"coordinates": [45.09097840770414, -67.05792519400974],
 	"photo": "lilypond",
 	"rating": "0"
-},
-{ 
-	"name": 'Pendlebury lighthouse',
-	"desc": "Access the beach during low tide.",
-	"coordinates": [45.06834200310476, -67.04725057623676],
-	"photo": "lighthouse",
-	"rating": "0"
-}, 
-{ 
-	"name": 'Wellness park',
-	"desc": "Stop for a workout on your way past.",
-	"coordinates": [45.07465931975202, -67.04022534305602],
-	"photo": "gym",
-	"rating": "0"
-},
-{
-	"name": 'Cornelia and Mowat',
-	"desc": "This is the busiest traffic intersection of the trail. Look both ways!",
-	"coordinates": [45.0913268458189, -67.06638872623444],
-	"photo": "cornelia",
-	"rating": "0"
-}, {
+},{
 	"name": 'Bar road entrance',
 	"desc": "The entrance to the paved section of the Van Horne trail. Don't feed the deer!",
 	"coordinates": [45.09428, -67.05881],
 	"photo": "vanhorne",
-	"rating": "0"
-}, {
-	"name": 'Rest stop',
-	"desc": "Relax and chill on the bench. Enjoy the peace and quiet of this location.",
-	"coordinates": [45.090187109010024, -67.05422423381893],
-	"photo": "bench",
 	"rating": "0"
 }, {
 	"name": 'Van Horne trail station',
@@ -100,12 +78,6 @@ data = [{
 	"photo": "streetscape",
 	"rating": "0"
 }, {
-	"name": 'Cornelia / 127 intersection',
-	"desc": "Looking south from Cornelia, a calm residential road, to Marine Science drive. Be careful crossing the 127 here.",
-	"coordinates": [45.08928881005657, -67.07134341391287],
-	"photo": "crn127",
-	"rating": "0"
-}, {
 	"name": 'Marine Science intersection',
 	"desc": "Looking south from Marine Science Drive and 127. This is a road with little traffic. Be careful crossing the 127 here.",
 	"coordinates": [45.08884100385681, -67.07108145330186],
@@ -118,13 +90,13 @@ data = [{
 	"photo": "xwalkalgo",
 	"rating": "0"
 }, {
-	"name": 'Algonquin golf course',
-	"desc": "This section is one of the hilliest parts of the trail. Watch out for errant golf balls!",
+	"name": 'Golf course',
+	"desc": "The hilliest section of the trail, but also the most scenic.",
 	"coordinates": [45.08391354812852, -67.07518747683325],
 	"photo": "golftrail",
 	"rating": "0"
 }, {
-	"name": 'Golf course connector',
+	"name": 'Golf course',
 	"desc": "Looking north through the Algonquin golf course. Walk up the hill through the golf course to access Marine Science Drive.",
 	"coordinates": [45.08154082634411, -67.07207472766693],
 	"photo": "brandy",
@@ -142,9 +114,9 @@ data = [{
 	"photo": "nhs",
 	"rating": "0"
 }, {
-	"name": 'Single track',
-	"desc": "Looking south on a scenic but narrow path linking Katys Cove to playing fields trail section.",
-	"coordinates": [45.0852,-67.0543],
+	"name": 'Nature path',
+	"desc": "If you are feeling adventurous, check out the nature path linking Katys Cove to playing fields trail section.",
+	"coordinates": [45.08491644307145,-67.05328275154912],
 	"photo": "path",
 	"rating": "0"
 }, {
@@ -164,12 +136,6 @@ data = [{
 	"desc": "Thousands of Irish immigrants came through St Andrews to seek a better life. Unfortunately, many died on Hospital Island, the quarentine location. The Celtic cross on the waterfront commemorates them.",
 	"coordinates": [45.072296109239424, -67.03759871706848],
 	"photo": "celtic",
-	"rating": "0"
-}, {
-	"name": 'Pagan point trail section',
-	"desc": "This paved section of the trail takes you along the Pagan Point Nature Preserve, providing beautiful views of the coastal marsh and Passamaquoddy Bay.",
-	"coordinates": [45.07456619556769, -67.04047504361094],
-	"photo": "entry",
 	"rating": "0"
 }, {
 	"name": 'Katys Cove beach and playground (and washrooms)',
@@ -196,12 +162,6 @@ data = [{
 	"photo": "indian",
 	"rating": "0"
 }, {
-	"name": 'Passamaquoddy view',
-	"desc": "The view looking south over the Bay. Take a moment to enjoy one of best views on the trail.",
-	"coordinates": [45.08320461514308, -67.07460794601343],
-	"photo": "golfview",
-	"rating": "0"
-},{
 	"name": 'Sports field path',
 	"desc": "Looking towards the sports fields down the paved trail added to the Van Horne trail. This section cuts through the playing fields.",
 	"coordinates": [45.08801298001523,-67.05304741859436],
